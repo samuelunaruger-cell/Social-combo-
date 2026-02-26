@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Combo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Social Combo</h1>
+
+<div id="auth">
+  <input id="username" placeholder="Username">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<hr>
+
+<div id="createPost">
+  <textarea id="postText" placeholder="What's happening?"></textarea>
+  <input type="file" id="media">
+  <button onclick="createPost()">Post</button>
+</div>
+
+<div id="feed"></div>
+
+<hr>
+
+<h2>Live Chat</h2>
+<div id="chatBox"></div>
+<input id="chatInput">
+<button onclick="sendMessage()">Send</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
